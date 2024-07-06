@@ -1,0 +1,45 @@
+# Common files
+*.log
+*.tmp
+*.crt
+*.key
+
+# OS specific temporary files
+Thumbs.db
+DS_Store
+
+# IDE or editor specific files
+.idea/
+.vscode/
+sublime-project
+
+# Build output or cache
+node_modules/
+dist/
+build/
+.npmignore
+
+# Testing frameworks
+jest/
+cypress/
+
+# Markdown editor temp files
+.DS_Store
+.localized
+
+# Env files
+.env.local
+.env.development
+.env.production
+
+# Text editor backups
+*.bak
+*.swp
+
+# Visual Studio Code settings
+settings.json
+keybindings.json
+
+# History files
+.git/logs
+.git/branches
