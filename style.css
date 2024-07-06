@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-bg{
+    cursor: none;
+    pointer-events: none;
+    height: 80%;
+    width: 80%;
+    margin:0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    background-image: url('./assets/images/mainbgshape.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: transparent;
+    mix-blend-mode: multiply;    
+}
