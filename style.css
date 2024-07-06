@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: serif;
+}
+
 .hero-bg{
     cursor: none;
     pointer-events: none;
@@ -20,3 +24,20 @@
     background-color: transparent;
     mix-blend-mode: multiply;    
 }
+.angled-rect {
+    cursor: none;
+    pointer-events: none;
+    height: 80%;
+    width: 80%;
+    margin:0 auto;
+    position: absolute;
+    top: 25%;    
+    /* transform: translate(0,-50%); */
+    left: 0;
+    right: 0;
+    width: 150px; /* Adjust width as needed */
+    height: 50%; /* Adjust height as needed */
+    background:transparent;  /* Set background color */
+    transform: skewX(-30deg); /* Skew the rectangle horizontally */
+    border:1px solid rgba(255, 255, 255, 0.836);
+  }
