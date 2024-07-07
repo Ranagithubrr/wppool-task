@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="2xl:container mx-auto">
+    <div class="2xl:container mx-auto bg-gray-200">
         <!-- hero section -->
         <div class="h-screen bg-mainbg relative">
             <nav class="flex items-start px-8 py-4 justify-between">
@@ -77,7 +77,7 @@
 
         </div>
         <!-- chart section -->
-        <section>
+        <section class="bg-white mx-4 py-2 my-4 rounded-xl">
             <div class="w-full flex px-4 my-4">
                 <div class="w-2/12 bg-gray-200 p-2 rounded">
                     <div class="flex justify-between px-2 py-3 bg-mainbg rounded-lg font-serif cursor-pointer">
@@ -198,16 +198,146 @@
             </div>
         </section>
         <!-- all companies -->
-         <section>
-            <div class="flex">
-                <div>
-                    <h4>All Companies</h4>
+         <section class="bg-white mx-4 py-2 my-8 rounded-xl">
+            <!-- search box -->
+            <div class="flex px-4 py-4">
+                <div class="w-1/2">
+                    <h4 class="text-4xl font-serif">All Companies</h4>
                 </div>
-                <div>
-                    <form action="#">
-                        <input type="text" placeholder="Search Companies">
+                <div class="w-1/2">
+                    <form action="#" class="relative">
+                        <input type="search" placeholder=" Search Companies" class="bg-gray-200 rounded pl-8 px-4 py-2 border outline-none w-full">
+                        <i class="fa fa-search absolute top-3 left-3 text-gray-500" aria-hidden="true"></i>
                     </form>
                 </div>
+            </div>
+            <!-- table -->
+            <table class="w-full text-center">
+                <tr>
+                    <th>Company</th>
+                    <th>Ticker <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+                    <th>Vertical</th>
+                    <th>Price</th>
+                    <th>Market Cap ($B)</th>
+                    <th>Revinue Growth</th>
+                    <th>Gross Margin</th>
+                    <th>EV/Revenue</th>
+                    <th>YTD Perfomance</th>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white">
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white">
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+                <tr class="bg-gray-100 even:bg-white my-3" >
+                    <td>Adyen</td>
+                    <td>AFRM</td>
+                    <td>Payments</td>
+                    <td>$17.15</td>
+                    <td>$50.5</td>
+                    <td>49.0%</td>
+                    <td>15.8%</td>
+                    <td>6.3</td>
+                    <td>24.3%</td>
+                </tr>
+            </table>
+            <div class="text-center py-4">
+                <button class="bg-mainbg hover:bg-blue-600 transition-all duration-200 shadow-lg shadow-gray-400 text-white px-4 py-2 rounded-full mx-1">Download ‘All Companies’ Data</button>
+                <button class="bg-mainbg hover:bg-blue-600 transition-all duration-200 shadow-lg shadow-gray-400 text-white px-4 py-2 rounded-full mx-1">View Methodology</button>
             </div>
          </section>
     </div>
