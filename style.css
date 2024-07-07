@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     /* font-family: serif; */
 }
 
-.hero-bg{
+.hero-bg {
     cursor: none;
     pointer-events: none;
     height: 80%;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     left: 0;
     right: 0;
     background-image: url('./assets/images/mainbgshape.svg');
@@ -22,22 +22,71 @@ body{
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: transparent;
-    mix-blend-mode: multiply;    
+    mix-blend-mode: multiply;
 }
+
 .angled-rect {
     cursor: none;
     pointer-events: none;
     height: 80%;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     position: absolute;
-    top: 25%;    
+    top: 25%;
     /* transform: translate(0,-50%); */
     left: 0;
     right: 0;
-    width: 150px; /* Adjust width as needed */
-    height: 50%; /* Adjust height as needed */
-    background:transparent;  /* Set background color */
-    transform: skewX(-30deg); /* Skew the rectangle horizontally */
-    border:1px solid rgba(255, 255, 255, 0.836);
-  }
+    width: 150px;
+    /* Adjust width as needed */
+    height: 50%;
+    /* Adjust height as needed */
+    background: transparent;
+    /* Set background color */
+    transform: skewX(-30deg);
+    /* Skew the rectangle horizontally */
+    border: 1px solid rgba(255, 255, 255, 0.836);
+}
+
+.imageslider {
+    position: relative;
+}
+
+.sliderSec {
+    background: url('./assets/images/sliderbg.png') no-repeat right;
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+.imageslider .slick-prev {
+    background-color: white;
+    color: black;
+    /* Keep this one */
+    top: 92%;
+    left: 2%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.imageslider .slick-prev::before {
+    color: #2042B6;
+    /* Change the arrow color */
+}
+
+.imageslider .slick-next::before {
+    color: #2042B6;
+    /* Change the arrow color */
+}
+
+.imageslider .slick-next,
+.imageslider .slick-next:focus,
+.imageslider .slick-next:hover {
+    background-color: white;
+    color: black;
+    /* Keep this one */
+    top: 92%;
+    left: 8%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
