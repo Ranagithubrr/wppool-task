@@ -7,10 +7,12 @@
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/12bfbfeb9e.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
     <div class="2xl:container mx-auto">
+        <!-- hero section -->
         <div class="h-screen bg-mainbg relative">
             <nav class="flex items-start px-8 py-4 justify-between">
                 <div>
@@ -30,7 +32,7 @@
             </nav>
             <!-- only for background image -->
             <div class="hero-bg z-0">
-            </div>          
+            </div>
 
             <div class="h-full w-full z-10">
                 <div class="absolute bottom-0 pb-10 pl-8">
@@ -38,41 +40,231 @@
                         <span class="block text-3xl text-white">
                             60
                         </span>
-                        <span class="font-light text-gray-300">Companies</span>                    
+                        <span class="font-light text-gray-300">Companies</span>
                     </div>
                     <div class="mt-8">
                         <span class="block text-3xl text-white">
                             $100B
                         </span>
-                        <span class="font-light text-gray-300">Market cap</span>                    
+                        <span class="font-light text-gray-300">Market cap</span>
                     </div>
                     <div class="mt-8">
                         <span class="block text-3xl text-white">
                             3.5x
                         </span>
-                        <span class="font-light text-gray-300">Revenue multiple</span>                    
+                        <span class="font-light text-gray-300">Revenue multiple</span>
                     </div>
                     <div class="mt-8">
                         <span class="block text-3xl text-white">
                             60%
                         </span>
-                        <span class="font-light text-gray-300">LTM avg. revenue growth rate</span>                    
-                    </div> 
-                </div>    
+                        <span class="font-light text-gray-300">LTM avg. revenue growth rate</span>
+                    </div>
+                </div>
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 right-0 mx-auto text-center">
-                    <h1 class="text-5xl text-white">The WPPOOL Index</h1>
-                    <p class="text-gray-200 text-lg font-thin">Monitor the performance of emerging, publicly traded, financial technology companies</p>
-                </div>           
+                    <h1 class="text-5xl text-white font-serif">The WPPOOL Index</h1>
+                    <p class="text-gray-200 text-lg font-thin">Monitor the performance of emerging, publicly traded,
+                        financial technology companies</p>
+                </div>
             </div>
             <!-- angle box style -->
             <div class="angled-rect"></div>
             <!-- scroll to botto button -->
-            <button class="bg-white shadow-lg shadow-slate-700 absolute right-5 bottom-5 p-4 rounded-full outline-none border-none">
+            <button
+                class="bg-white shadow-lg shadow-slate-800 absolute right-5 bottom-5 p-4 rounded-full outline-none border-none">
                 <img src="./assets/icons/arrow_downward_alt.png" alt="">
             </button>
 
         </div>
+        <!-- chart section -->
+        <section>
+            <div class="w-full flex px-4 my-4">
+                <div class="w-2/12 bg-gray-200 p-2 rounded">
+                    <div class="flex justify-between px-2 py-3 bg-mainbg rounded-lg font-serif cursor-pointer">
+                        <span class="text-white">The Index</span>
+                        <span class="text-white">-</span>
+                    </div>
+                    <div class="flex justify-between px-2 py-3 my-3 rounded-lg font-serif cursor-pointer text-gray-700">
+                        <span>The Index Tab Two</span>
+                        <span>+</span>
+                    </div>
+                    <div class="flex justify-between px-2 py-3 my-3 rounded-lg font-serif cursor-pointer text-gray-700">
+                        <span>The Index Tab Three</span>
+                        <span>+</span>
+                    </div>
+                    <div class="flex justify-between px-2 py-3 my-3 rounded-lg font-serif cursor-pointer text-gray-700">
+                        <span>The Index Tab Four</span>
+                        <span>+</span>
+                    </div>
+                    <div class="flex justify-between px-2 py-3 my-3 rounded-lg font-serif cursor-pointer text-gray-700">
+                        <span>The Index Tab Five</span>
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="w-10/12 p-2 px-6">
+                    <div class="flex items-center">
+                        <img src="./assets/icons/Union.png" alt="">
+                        <h2 class="text-4xl font-serif pl-2">The WPPOOL Index</h2>
+                    </div>
+                    <div class="flex py-2">
+                        <div class="flex bg-gray-100 px-3 py-2 rounded-lg w-3/12 items-center justify-between mx-2">
+                            <div>
+                                <span class="text-3xl" style="color: #FC714D;">+66.2%</span>
+                            </div>
+                            <div class="flex">
+                                <p class="text-xs leading-4 font-semibold pr-2">WPPOOL <br> Index</p>
+                                <div class="w-1 h-8 bg-orange-400 rounded">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex bg-gray-100 px-3 py-2 rounded-lg w-3/12 items-center justify-between mx-2">
+                            <div>
+                                <span class="text-3xl text-blue-600">+26.6%</span>
+                            </div>
+                            <div class="flex">
+                                <p class="text-xs leading-4 font-semibold pr-2">Goolge <br> Index</p>
+                                <div class="w-1 h-8 bg-blue-600 rounded">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex bg-gray-100 px-3 py-2 rounded-lg w-3/12 items-center justify-between mx-2">
+                            <div>
+                                <span class="text-3xl text-lime-600">+34.1%</span>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-xs leading-4 font-semibold pr-2">Microsoft</p>
+                                <div class="w-1 h-8 bg-lime-600 rounded">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex bg-gray-100 px-3 py-2 rounded-lg w-3/12 items-center justify-between mx-2">
+                            <div>
+                                <span class="text-3xl text-purple-800">+17%</span>
+                            </div>
+                            <div class="flex">
+                                <p class="text-xs leading-4 font-semibold pr-2">Twitter <br> Index</p>
+                                <div class="w-1 h-8 bg-purple-800 rounded">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-4 flex justify-between">
+                        <div class="flex">
+                            <select
+                                class="bg-mainbg mr-4 w-48 flex items-center justify-between border-none outline-none text-white px- py-1 rounded-full px-2">
+                                <option value="Sectors">
+                                    Sectors
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 2
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 3
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 4
+                                </option>
+                            </select>
+                            <select
+                                class="bg-mainbg w-48 flex items-center justify-between border-none outline-none text-white px- py-1 rounded-full px-2">
+                                <option value="Sectors">
+                                    Types of IPO
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 2
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 3
+                                </option>
+                                <option value="Sectors">
+                                    Sectors 4
+                                </option>
+                            </select>
+                        </div>
+                        <div class="bg-gray-100 rounded-full px-4 py-2">
+                            <span class="mx-2 hover:bg-gray-200 p-2 rounded-full cursor-pointer">1Y</span>
+                            <span class="mx-2 hover:bg-gray-200 p-2 rounded-full cursor-pointer">YTD</span>
+                            <span class="mx-2 p-2 px-3 bg-mainbg text-white rounded-full cursor-pointer">6M</span>
+                            <span class="mx-2 hover:bg-gray-200 p-2 rounded-full cursor-pointer">1M</span>
+                            <span class="mx-2 hover:bg-gray-200 p-2 rounded-full cursor-pointer">1W</span>
+                        </div>
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </section>
+        <!-- all companies -->
+         <section>
+            <div class="flex">
+                <div>
+                    <h4>All Companies</h4>
+                </div>
+                <div>
+                    <form action="#">
+                        <input type="text" placeholder="Search Companies">
+                    </form>
+                </div>
+            </div>
+         </section>
     </div>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                datasets: [
+                    {
+                        label: 'WPPOOL',  // Label for the first dataset
+                        data: [0, 10, 15, 40, 30, 60, 50, 42, 56, 68, 60, 34],
+                        borderColor: 'red',  // Optional: Set a color for the first dataset line
+                        borderWidth: 1,
+
+                    },
+                    {
+                        label: 'Google',  // Label for the second dataset
+                        data: [0, 3, 8, 1, 30, 7, 4, 0, 10, 15, 40, 30, 60, 50, 42, 56, 68, 72, 34],
+                        borderColor: 'blue',  // Optional: Set a color for the second dataset line
+                        borderWidth: 1,
+
+                    },
+                    {
+                        label: 'Microsoft',
+                        data: [0, 10, 20, 0, 10, 15, 40, 30, 60, 50, 42, 60, 68, 72, 34, 30, 20, 50, 30, 60],
+                        borderColor: 'green',
+                        borderWidth: 1,
+
+                    },
+                    {
+                        label: 'Twitter Index',
+                        data: [0, 5, 25, 35, 90, 45, 20, 55, 65],
+                        borderColor: 'orange',
+                        borderWidth: 1,
+                        stack: 'combined'
+                    }
+                ]
+
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
