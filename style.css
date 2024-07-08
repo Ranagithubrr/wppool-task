@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* font-family: serif; */
+}
+
+/* sticky navbar */
+.stickyNav {
+    position: fixed;
+    background: white;
+    color: black;
+    top: 0;
+    width: 100%;
+}
+
+.hiddenMenu {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .hero-bg {
     cursor: none;
     pointer-events: none;
     height: 80%;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -88,12 +106,29 @@ body {
     color: black;
     /* Keep this one */
     top: 105%;
-    left: 8%;
+    left: 20%;
     border-radius: 50%;
     height: 50px;
     width: 50px;
 }
 
-.increaseZindex{
+.increaseZindex {
     z-index: 20;
+}
+
+
+@media screen and (min-width:1080px) {
+
+    .imageslider .slick-next,
+    .imageslider .slick-next:focus,
+    .imageslider .slick-next:hover {
+        background-color: white;
+        color: black;
+        /* Keep this one */
+        top: 105%;
+        left: 8%;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
 }
