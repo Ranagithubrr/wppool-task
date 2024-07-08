@@ -57,11 +57,14 @@ body {
     box-sizing: border-box;
 }
 
-.imageslider .slick-prev {
+.imageslider .slick-prev,
+.imageslider .slick-prev:focus,
+.imageslider .slick-prev:hover {
     background-color: white;
     color: black;
+    z-index: 10;
     /* Keep this one */
-    top: 92%;
+    top: 105%;
     left: 2%;
     border-radius: 50%;
     height: 50px;
@@ -84,9 +87,13 @@ body {
     background-color: white;
     color: black;
     /* Keep this one */
-    top: 92%;
+    top: 105%;
     left: 8%;
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+.increaseZindex{
+    z-index: 20;
 }
